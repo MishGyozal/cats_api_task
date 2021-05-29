@@ -1,0 +1,32 @@
+@mixin size($property) {
+    font-family: "Gotham Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: $property;
+    line-height: 136.9%;
+    color: #0D3127;
+  }
+
+.containerCategories{
+    margin: 25px 0px 0px 25px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.home{
+    @include size(30px);
+}
+
+.links{
+    @include size(25px);
+    text-decoration: none;
+    width: max-content;
+    margin: 5px 20px;
+}
+
+.activeLink{
+    color: #3FAD88;
+    border-bottom: 4px solid #3FAD88;
+}
